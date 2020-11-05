@@ -1,0 +1,15 @@
+<div>
+  <h1>Task-1 Sharing data between components Trough INPUT and OUPUT decorator</h1>
+</div>
+
+<app-child1 (childEvent)="message=$event" [parentData]=" name"></app-child1>
+<div>
+  <h1>
+    {{message}}
+  </h1>
+</div>
+<div>
+  <input #nameRef type="text" >
+  <p>welcome {{name}}</p>
+</div>
+<app-comp1></app-comp1>
